@@ -22,7 +22,7 @@ const Navbar = () => {
   }
   const liData = ["Desitnations", "Hotels", "Flights", "Bookings", "Login"]
   return (
-    <nav className="contain relative w-full flex justify-between items-center py-5 xxl:py-8">
+    <nav className="contain relative w-full flex justify-between items-center py-5 xxl:py-8 overflow-hidden">
         <div>
             <img src="Logo.png" alt="" />
         </div>
