@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.contain{
+    max-width: 1500px;
+    padding-left:  0.8rem;
+    padding-right: 0.8rem;
+    margin: 0 auto;
+}
+.section_padding{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+
+/* menu_btn */
+
+.humberger{
+    position: relative;
+    width: 40px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.menu_btn{
+    position: absolute;
+    width: 40px;
+    height: 5px;
+    background-color: #000;
+    transition: all 0.5s ease-in;
+    border-radius: 10px;
+}
+.menu_btn::before{
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 5px;
+    background-color: #000;
+    transform: translateY(10px);
+    transition: all 0.5s ease-in;
+    border-radius: 10px;
+}
+.menu_btn::after{
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 5px;
+    background-color: #000;
+    transform: translateY(-10px);
+    transition: all 0.5s ease-in;
+    border-radius: 10px;
+}
+.open.menu_btn::after{
+    transform: rotate(45deg);
+}
+.open.menu_btn::before{
+    transform: rotate(-45deg);
+}
+.open.menu_btn{
+    background-color: transparent;
+}
+
+@media(370px < width <= 500px){
+    .contain{
+        padding-left:  1rem;
+        padding-right: 1rem;
+    }
+}
+@media(500px < width <= 650px){
+    .contain{
+        padding-left:  1.5rem;
+        padding-right: 1.5rem;
+    }
+    .section_padding{
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+}
+@media(650px < width <= 800px){
+    .contain{
+        padding-left:  2rem;
+        padding-right: 2rem;
+    }
+    .section_padding{
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+}
+@media(800px < width <= 1080px){
+    .contain{
+        padding-left:  2.5rem;
+        padding-right: 2.5rem;
+    }
+    .section_padding{
+        padding-top: 3.5rem;
+        padding-bottom: 3.5rem;
+    }
+}
+@media(1080px < width <= 1580px){
+    .contain{
+        padding-left:  2.8rem;
+        padding-right: 2.8rem;
+    }
+    .section_padding{
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+}
+@media(1580px < width <= 10000px){
+    .contain{
+        padding-left:  0rem;
+        padding-right: 0rem;
+    }
+    .section_padding{
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+}
