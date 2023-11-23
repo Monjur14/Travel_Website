@@ -20,7 +20,7 @@ export default {
       volkhov: ['Volkhov', "serif"]
     },
     screens: {
-      xsm: "370px",
+      xsm: "400px",
       sm: "480px",
       md: "768px",
       lg: "1050px",
