@@ -22,7 +22,7 @@ const Navbar = () => {
   }
   const liData = ["Desitnations", "Hotels", "Flights", "Bookings", "Login"]
   return (
-    <nav className="contain relative w-full flex justify-between items-center py-5 xxl:py-8 overflow-hidden">
+    <nav className="contain relative w-full flex justify-between items-center py-5 xxl:py-8 z-50">
         <div>
             <img src="Logo.png" alt="" />
         </div>
@@ -42,7 +42,7 @@ const Navbar = () => {
         </div>
         <AnimatePresence>
           { open && 
-            <motion.div className="mobile_menu absolute w-full h-screen bg-white left-0 top-20 flex items-center justify-center"
+            <motion.div className="mobile_menu absolute overflow-hidden w-full h-screen bg-white left-0 top-20 flex items-center justify-center"
               initial={{x: "100vw"}}
               animate={{x: 0}}
               transition={{

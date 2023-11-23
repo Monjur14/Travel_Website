@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 .contain{
     max-width: 1500px;
     padding-left:  0.8rem;
@@ -26,7 +27,7 @@
 }
 .menu_btn{
     position: absolute;
-    width: 40px;
+    width: 35px;
     height: 5px;
     background-color: #000;
     transition: all 0.5s ease-in;
@@ -35,7 +36,7 @@
 .menu_btn::before{
     content: "";
     position: absolute;
-    width: 40px;
+    width: 35px;
     height: 5px;
     background-color: #000;
     transform: translateY(10px);
@@ -45,7 +46,7 @@
 .menu_btn::after{
     content: "";
     position: absolute;
-    width: 40px;
+    width: 35px;
     height: 5px;
     background-color: #000;
     transform: translateY(-10px);
@@ -61,6 +62,12 @@
 .open.menu_btn{
     background-color: transparent;
 }
+
+/* box shadow  */
+.box_shadow{
+    box-shadow: 0 0 13px rgba(0,0,0, 0.2);
+}
+
 
 @media(370px < width <= 500px){
     .contain{
