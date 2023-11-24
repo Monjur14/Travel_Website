@@ -38,7 +38,6 @@ const Navbar = () => {
         </div>
         <div className="humberger block lg:hidden" onClick={toggle}>
           <div className={open ? "menu_btn open" :  "menu_btn" }></div>
-          {console.log(open)}
         </div>
         <AnimatePresence>
           { open && 
@@ -50,9 +49,7 @@ const Navbar = () => {
                 duration: 0.5,
               }}
               exit={{x: "100vw"}}
-
-            >
-              
+            >             
               <motion.ul className="flex flex-col text-2xl md:text-4xl font-bold text-center gap-10  mb-16"
               transition={{
                 staggerChildren: 1
