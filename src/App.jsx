@@ -1,5 +1,6 @@
 import './App.css'
 import Navbar from './Components/Navbar'
+import AnimatedText from './Sections/AnimatedText'
 import Hero from './Sections/Hero'
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <>
       <Navbar/>
       <Hero/>
+      {/* <AnimatedText/> */}
     </>
   )
 }
