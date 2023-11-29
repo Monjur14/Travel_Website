@@ -9,7 +9,7 @@ const TopSelling = () => {
             <Heading tag={"Top Selling"} title={"Top Destinations"}/>
       </div>
       <div className="flex flex-col gap-7 lg:flex-row z-50">
-            <TravelComp day={"10 Days Trip"} des={"Santorini, Greek"} price={"$5,42k"} bg={"bg-[url('img1.webp')] bg1"} />
+            <TravelComp day={"10 Days Trip"} des={"Santorini, Greek"} price={"$5,42k"} bg={"bg-[url('im1.webp')] bg1"} />
             <TravelComp day={"12 Days Trip"} des={"Desert, Africa"} price={"$4.2k"} bg={"bg-[url('img2.webp')] bg2"}/>
             <TravelComp day={"10 Days Trip"} des={"Full Dubai"} price={"$15k"} bg={"bg-[url('img3.webp')] bg3"}/>
       </div>
