@@ -12,7 +12,9 @@ export default {
       yellow: "#F1A501",
       gray: "#5E6282",
       light_black: "#212832",
-      green: "#006380"
+      green: "#006380",
+      orange2: "#F15A2B",
+      color2: "#DFD7F9"
     },
     fontFamily: {
       opensans: ['Open Sans', "sans-serif"],

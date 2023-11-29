@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+    /* border: 1px solid red; */
+}
+
 
 .contain{
     max-width: 1500px;
@@ -67,6 +71,26 @@
 .box_shadow{
     box-shadow: 0 0 13px rgba(0,0,0, 0.2);
 }
+.box_shadow_2{
+    box-shadow: 0 0 20px rgba(0,0,0, 0.12);
+}
+
+.bg1{
+    background-image: url(../public/img\ 1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg2{
+    background-image: url(../public/img\ 2.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg3{
+    background-image: url(../public/img\ 3.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 
 
 @media(370px < width <= 500px){
@@ -111,8 +135,8 @@
         padding-right: 2.8rem;
     }
     .section_padding{
-        padding-top: 4rem;
-        padding-bottom: 4rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
     }
 }
 @media(1580px < width <= 10000px){

@@ -1,7 +1,13 @@
 import './App.css'
 import Navbar from './Components/Navbar'
-import AnimatedText from './Sections/AnimatedText'
+import Booking from './Sections/Booking'
+import Companies from './Sections/Companies'
+import Contact from './Sections/Contact'
+import Credit from './Sections/Credit'
+import Footer from './Sections/Footer'
 import Hero from './Sections/Hero'
+import Services from './Sections/Services'
+import TopSelling from './Sections/TopSelling'
 
 function App() {
 
@@ -9,7 +15,13 @@ function App() {
     <>
       <Navbar/>
       <Hero/>
-      {/* <AnimatedText/> */}
+      <TopSelling/>
+      <Booking/>
+      <Services/>
+      <Companies/>
+      <Contact/>
+      <Footer/>
+      <Credit/>
     </>
   )
 }
