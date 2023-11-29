@@ -76,14 +76,17 @@
 }
 
 .bg1{
+    background-image: url(../public//img1.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
 .bg2{
+    /* background-image: url(img2.png); */
     background-repeat: no-repeat;
     background-size: cover;
 }
 .bg3{
+    /* background-image: url(img3.png); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
