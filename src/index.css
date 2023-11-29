@@ -76,17 +76,17 @@
 }
 
 .bg1{
-    background-image: url(../public/img\ 1.webp);
+    background-image: url(public/img\ 1.webp);
     background-repeat: no-repeat;
     background-size: cover;
 }
 .bg2{
-    background-image: url(../public/img\ 2.webp);
+    background-image: url(public/img\ 2.webp);
     background-repeat: no-repeat;
     background-size: cover;
 }
 .bg3{
-    background-image: url(../public/img\ 3.webp);
+    background-image: url(public/img\ 3.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
