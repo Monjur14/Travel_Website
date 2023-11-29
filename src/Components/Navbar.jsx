@@ -1,5 +1,5 @@
 import { useState } from "react"
-import {motion, AnimatePresence, delay} from "framer-motion"
+import {motion, AnimatePresence, useAnimate, stagger} from "framer-motion"
 
 const Navbar = () => {
   const [open, setOpen] = useState(false)
@@ -20,22 +20,55 @@ const Navbar = () => {
       }
     })
   }
+  const variant2 = {
+    animate: {
+      y: 0,
+      x: 0,
+      rotateZ: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.7,
+        staggerChildren: 1,
+      }
+    }
+  }
   const liData = ["Desitnations", "Hotels", "Flights", "Bookings", "Login"]
   return (
-    <nav className="contain relative w-full flex justify-between items-center py-5 xxl:py-8 z-30">
+    <nav className="contain relative w-full flex justify-between items-center py-5 xxl:py-8 z-50">
         <div>
             <img src="Logo.png" alt="" />
         </div>
-        <div className="hidden lg:flex  items-center gap-12 font-opensans text-lg xxl:text-2xl">
+        <motion.div
+        
+        className="hidden lg:flex  items-center gap-12 font-opensans text-lg xxl:text-2xl">
+            {/* <motion.ul 
+            
+            className="flex gap-12 font-semibold">
+                <motion.li
+                  initial={{y: -100, x: -20, rotateZ: -45, opacity: 0}} variants={variant2} animate="animate"
+                className="cursor-pointer">Desitnations</motion.li>
+                <motion.li 
+                  initial={{y: -100, x: -20, rotateZ: -45, opacity: 0}}  variants={variant2} animate="animate"
+                className="cursor-pointer">Hotels</motion.li>
+                <motion.li 
+                  initial={{y: -100, x: -20, rotateZ: -45, opacity: 0}}  variants={variant2} animate="animate"
+                className="cursor-pointer">Flights</motion.li>
+                <motion.li 
+                  initial={{y: -100, x: -20, rotateZ: -45, opacity: 0}}  variants={variant2} animate="animate"
+                className="cursor-pointer">Bookings</motion.li>
+                <motion.li 
+                  initial={{y: -100, x: -20, rotateZ: -45, opacity: 0}}  variants={variant2} animate="animate"
+                className="cursor-pointer">Login</motion.li>
+            </motion.ul> */}
             <ul className="flex gap-12 font-semibold">
-                <li className="cursor-pointer">Desitnations</li>
-                <li className="cursor-pointer">Hotels</li>
-                <li className="cursor-pointer">Flights</li>
-                <li className="cursor-pointer">Bookings</li>
-                <li className="cursor-pointer">Login</li>
+              {liData.map((item, i) => {
+                return (
+                  <motion.li key={i} initial={{y: -100, x: -30, rotateZ: -55, opacity: 0}} animate={{x: 0, y: 0, rotateZ:0, opacity: 1, transition: { duration: 0.5, delay: i * 0.25}}}>{item}</motion.li>
+                )
+              })}
             </ul>
             <button className="font-medium border px-5 py-1 rounded-md">Sign Up</button>
-        </div>
+        </motion.div>
         <div className="humberger block lg:hidden" onClick={toggle}>
           <div className={open ? "menu_btn open" :  "menu_btn" }></div>
         </div>
